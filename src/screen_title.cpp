@@ -65,6 +65,7 @@ void DrawTitleScreen(void)
     Vector2 pos = {20, 10};
     DrawTextEx(font, "TITLE SCREEN", pos, font.baseSize * 3.0f, 4, DARKGREEN);
     DrawText("PRESS ENTER or TAP to JUMP to GAMEPLAY SCREEN", 120, 220, 20, DARKGREEN);
+    DrawText("START", 50, 100, 15, DARKGREEN);
 }
 
 // Title Screen Unload logic

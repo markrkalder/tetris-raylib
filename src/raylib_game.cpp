@@ -34,7 +34,7 @@ Sound fxCoin = {0};
 // Local Variables Definition (local to this module)
 //----------------------------------------------------------------------------------
 static const int screenWidth = 800;
-static const int screenHeight = 450;
+static const int screenHeight = 650;
 
 // Required variables to manage screen transitions (fade-in, fade-out)
 static float transAlpha = 0.0f;
@@ -80,7 +80,7 @@ int main(void)
 #if defined(PLATFORM_WEB)
     emscripten_set_main_loop(UpdateDrawFrame, 60, 1);
 #else
-    SetTargetFPS(60); // Set our game to run at 60 frames-per-second
+    SetTargetFPS(15); // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
 
     // Main game loop
